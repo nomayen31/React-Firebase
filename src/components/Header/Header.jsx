@@ -1,9 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+    let styles = {
+        marginRight: '20px',  
+      };
+
     return (
         <div>
-            <h1>This is header</h1>
+            <Link style={styles} to='/'>Home</Link>
+            <Link  to='/login'>Login</Link>
         </div>
     );
 };
